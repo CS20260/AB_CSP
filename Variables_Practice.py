@@ -9,7 +9,7 @@ one_h_ten_h = input("Pick a number 100-10,000. ")
 # what you had for breakfast
 your_breakfast = input("What did you have for breakfast? ")
 # what your favorite color is
-fav_color = input("What if you favorite color? ")
+fav_color = input("What is your favorite color? ")
 # a school name
 school_name = input("What is a name of a school? ")
 # the year
@@ -20,6 +20,5 @@ eye_color = input("What is your eye color? ")
 age = input("How old is someone? (It can be anyone...) ")
 # your favorite subject in school
 fav_subject = input("What is your favorite subject in school? ")
-
 
 print("Your name is", your_name, ". You picked a", one_to_ten, ", and then a", one_h_ten_h, ". You had", your_breakfast, "for breakfast. Your favorite color is", fav_color, ". The school name was", school_name, ". the year is", year, ". Your eye color is", eye_color, ". The age you put in is", age, ". Your favorite subject is", fav_subject, ".")
