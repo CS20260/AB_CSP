@@ -1,13 +1,4 @@
-# AB, Logical and Physical memory notes
-
-pi = 3.14159
-
-school = "UCAS" 
-
-print(f"The variable pi has a value of {pi} and is saved at {id(pi)}")
-
-print(f"the variable school has a value of {school} and is saved at {id(school)}")
-
+# AB, memory diagram, 9/14/26
 
 name = "Alex"
 print(f" name {id(name)}") 
@@ -35,4 +26,3 @@ print(f"price1 {id(price1)}")
 
 price2=10
 print(f"price2 {id(price2)}")
-
