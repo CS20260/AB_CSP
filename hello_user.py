@@ -9,6 +9,7 @@ while True:
         print("Dude. No numbers.")
     elif " " in name:
         print(f"Gonna be formal eh? My most humble greetings {name}.")
+        break
     else:
         break
 print(f"Hello {name}.")
