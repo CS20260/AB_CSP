@@ -9,8 +9,9 @@ age = input("How old are you: ")
 print(type(age))
 
 print(age*14 ) # => repetes string that # of times   
-####   ===> Concatenation => puts 2 strings directly next to each other
 
+
+####   ===> Concatenation => puts 2 strings directly next to each other use + sign
 print(name + " " + "Hickman")
 
 # SINTAX == string.action/method()
