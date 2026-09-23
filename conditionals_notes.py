@@ -23,3 +23,6 @@ print("Code is done")
 
 ###### comarison operator    <  >  == <=  >=  != not equal
 ###### logical operators     and <= both conditions must be true     or <= at least one MUST be true       not<= check to see if false
+
+
+################# DEF == CALLING A FUNCTION ##################
