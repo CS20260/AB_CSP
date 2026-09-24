@@ -7,6 +7,7 @@ lower = False
 number = False
 symbol = False
 strength = 0
+password_strength = ""
     # ask user for password
 password = input("Enter your password here: ")
 
@@ -21,7 +22,7 @@ for letter in password:
     # check if upper 
     if letter.isupper():
     # update variable
-        uppper = True
+        upper = True
 
     # check if lower
     if letter.islower():
@@ -34,46 +35,47 @@ for letter in password:
         number = True
 
     # if letter in " list possibilities ((!@#$%^&*()<>,.?/))":
-    if letter in "!@#$%^&*()_+-=`~[]\{}|;':<>?,./":
+    if letter in "!@#$%^&*()_+-=`~[]{|};':<>?,./":
     # update variable
         symbol = True
 
 # veriable to check strength
-if length is True:
+if length == True:
     strength += 1
 
-if upper is True:
+if upper == True:
     strength += 1
 
-if lower is True:
+if lower == True:
     strength += 1
 
-if number is True:
+if number == True:
     strength + 1
 
-if symbol is True:
+if symbol == True:
     strength + 1
 
-if password is 0:
+
+
+if strength == 0:
     password_strength = " VERY WEAK.."
 
-if password is 1:
+if strength == 1:
     password_strength = "weak.."
 
-if password is 2:
+if strength == 2:
     password_strength = "kinda weak"
 
-if password is 3:
+if strength == 3:
     password_strength = "low medium.."
 
-if password is 4:
+if strength == 4:
     password_strength = "medium"
 
-if password is 5:
+if strength == 5:
     password_strength = "strong!"
 
 # tell user how to fix
-if length is False:
     
 # # tell user if true or false for each thing
 
@@ -84,5 +86,12 @@ print(f"""Your password has:
     A number: {number}
     A symbol: {symbol}
 Your password strength is {password_strength}
-""")
+    If you don't have a strong password make sure you have:
+        8 characters
+        an uppercase letter
+        a lowercase letter
+        a number
+        a symbol
+    
+    If you are missing any of these, FIX IT!!!!!!""")
 
