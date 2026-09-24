@@ -39,7 +39,7 @@ for letter in password:
     # update variable
         symbol = True
 
-# veriable to check strength
+# variable to check strength
 if length == True:
     strength += 1
 
@@ -50,10 +50,10 @@ if lower == True:
     strength += 1
 
 if number == True:
-    strength + 1
+    strength += 1
 
 if symbol == True:
-    strength + 1
+    strength += 1
 
 
 
@@ -86,7 +86,7 @@ print(f"""Your password has:
     A number: {number}
     A symbol: {symbol}
 Your password strength is {password_strength}
-    If you don't have a strong password make sure you have:
+    If you don't have a strong password, make sure you have:
         8 characters
         an uppercase letter
         a lowercase letter
