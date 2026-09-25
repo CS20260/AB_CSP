@@ -3,7 +3,7 @@
 import random
 print("Hey! Guess what number I'm thinking about. You have TEN guesses, and its from 1-100.")
 # variable
-number = range(1,101)
+number = random.randint(1,101)
 count = 1
 
 # range is 1-100
@@ -11,9 +11,9 @@ count = 1
 
 #While loop
 while count <= 10:
-    guess = int.input("Your guess: ")
+    guess = int(input("Your guess: "))
     if guess == number:
-        print(f"Got it. It only took you {count}")
+        print(f"Got it. It only took you {count} guesses.")
         break
     elif guess > number:
         print("Too high.")
@@ -21,3 +21,5 @@ while count <= 10:
         print("Too low.")
     count += 1
 
+if count >= 10:
+    print(f"Ten guesses and you still couldn't guess it?!? It was {number}...")
