@@ -60,3 +60,20 @@ for num in range (1,25): # range bulids a list
         print("Fizz")
     else: 
         print(num)
+
+print("""
+      
+      
+      """)
+for num in range (1,20,):
+    print(num)
+
+    count = 2
+while count <= 20:
+    print(count)
+    count += 2
+    #### this counts by 2 till twenty
+
+for num in range(2,21,2):
+    print(num)
+    #### this counts by 2 till twenty
