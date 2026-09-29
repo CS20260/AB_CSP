@@ -1,6 +1,5 @@
 # AB, 7th, *******NOTES*******
 
-print("Hello World!") 
 
 ###### pseudocode notes ######
 # Break Down logic to Smaller pieces
@@ -8,3 +7,17 @@ print("Hello World!")
 # indent steps under blocks
 
 ###### veriables ######
+
+
+user = input("what is your name: ")
+teacher = "Ms. LaRose"
+
+
+
+def hello(name):
+    return f"Hello {name}."
+
+
+print(hello(user))
+print(hello(teacher))
+print(hello ("Hallie"))
