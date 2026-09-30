@@ -27,7 +27,7 @@ grades = [85,66,94,72,88,79,100]
 students = len(grades)
 average = sum(grades)/students
 #                        v inputs are always strings
-print(f"the avarage is {int(average)}") # int => integer  float=> float  str=> string
+print(f"the avarage is {int(average)}") # int => integer number   float=> float whole number    str=> string stuff in quotation marks
 #                               ^ what to convert
 
 # convert data type
