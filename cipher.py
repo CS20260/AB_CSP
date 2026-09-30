@@ -12,11 +12,12 @@
     # TO DECRIPT same steps back. number user gives you becomes negitive
 
 
-doing_what = input("Am I (E)ncrypting or (D)ecrypting? :   ").upper().strip()
+crypt = input("Am I (E)ncrypting or (D)ecrypting? :   ").upper().strip()
 message = input("Message:  ").lower().strip()
 shift = int(input("Shift amount:  "))
-let = ""
-def cipher( doing_what, message, shift, let):
+
+def cipher(message, shift):
+    let = ""
     for character in message:
         if character.isalpha():
             character = ord(character)
@@ -24,6 +25,24 @@ def cipher( doing_what, message, shift, let):
             if character >= 122:
                 character = character - 26
             character = chr(character)
-            let += character
+            let = let + character
+        else:         
+            character = ord(character)
+            character = character + shift 
+            if character >= 122:
+                character = character - 26
+            character = chr(character)
+            let = let + character
             
+
+            let = let + character
+    return let
+if message == "D":
+    shift = 0 - shift
+
+
+
+print(cipher(message, shift))
+
+
         
