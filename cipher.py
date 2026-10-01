@@ -8,12 +8,12 @@
     # build working loop to print out every letter
     # condidtional in loop to see if letter is a letter then, convert to number, increace, convert back, print
     # variable to save letter as you change (or dont to keep  , .  ect..)
-    # if pass end, maybe subtract to go back to beging of abc
+    # if pass end, subtract to go back to beging of abc
     # TO DECRIPT same steps back. number user gives you becomes negitive
 
 
-crypt = input("Am I (E)ncrypting or (D)ecrypting? :   ").upper().strip()
-message = input("Message:  ").lower().strip()
+crypt = input("Am I (e)ncrypting or (d)ecrypting? :   ").upper().strip()
+message = input("Message:  ").strip()
 shift = int(input("Shift amount:  "))
 
 def cipher(message, shift):
@@ -23,14 +23,21 @@ def cipher(message, shift):
             if character.isupper():
                 character = ord(character)
                 character = character + shift
-                if character >= 90:
-                    character - 25
+                if character > 90 and shift > 0:
+                    character -= 25
+                elif character < 65 and shift < 0:
+                    character += 25
+                character = chr(character)
+                let = let + character
             else:
                 character = ord(character)
                 character = character + shift
-                if character >= 122:
-                    character - 25
-            let = let + character
+                if character > 122 and shift > 0:
+                    character -= 25
+                elif character < 97 and shift < 0:
+                    character += 25
+                character = chr(character)
+                let = let + character
         else:
             let = let + character
     return let
