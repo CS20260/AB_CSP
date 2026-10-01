@@ -20,29 +20,22 @@ def cipher(message, shift):
     let = ""
     for character in message:
         if character.isalpha():
-            character = ord(character)
-            character = character + shift 
-            if character >= 122:
-                character = character - 26
-            character = chr(character)
+            if character.isupper():
+                character = ord(character)
+                character = character + shift
+                if character >= 90:
+                    character - 25
+            else:
+                character = ord(character)
+                character = character + shift
+                if character >= 122:
+                    character - 25
             let = let + character
-        else:         
-            character = ord(character)
-            character = character + shift 
-            if character >= 122:
-                character = character - 26
-            character = chr(character)
-            let = let + character
-            
-
+        else:
             let = let + character
     return let
-if message == "D":
-    shift = 0 - shift
-
-
+if crypt == "D":
+    shift = (0 - shift)
 
 print(cipher(message, shift))
-
-
-        
+       
