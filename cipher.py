@@ -24,18 +24,18 @@ def cipher(message, shift):
                 character = ord(character)
                 character = character + shift
                 if character > 90 and shift > 0:
-                    character -= 25
+                    character -= 26
                 elif character < 65 and shift < 0:
-                    character += 25
+                    character += 26
                 character = chr(character)
                 let = let + character
             else:
                 character = ord(character)
                 character = character + shift
                 if character > 122 and shift > 0:
-                    character -= 25
+                    character -= 26
                 elif character < 97 and shift < 0:
-                    character += 25
+                    character += 26
                 character = chr(character)
                 let = let + character
         else:
