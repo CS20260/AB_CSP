@@ -1,1 +1,1 @@
-hi, cat, rat, mat, splat, kite, jug, mug, bug, type
+hi,cat,rat,mat,splat,kite,jug,mug,bug,type
