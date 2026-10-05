@@ -50,7 +50,7 @@ def scaffold (incorrect):
                 |_________  """)
 
     elif incorrect == 3:
-        print("""______
+        print(""" ______
                 |      |
                 |     (oo) 
                 |     /||
@@ -58,7 +58,7 @@ def scaffold (incorrect):
                 |_________  """)
         
     elif incorrect == 4:
-        print("""______
+        print(""" ______
                 |      |
                 |     (oo) 
                 |     /||\\
@@ -66,7 +66,7 @@ def scaffold (incorrect):
                 |_________  """)
         
     elif incorrect == 5:
-        print("""______
+        print(""" ______
                 |      |
                 |     (oo) 
                 |     /||\\
