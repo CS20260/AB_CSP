@@ -26,12 +26,12 @@ guessed = []
 # function to display hangman (needs wrong guesses)
 def scaffold (incorrect):
     if incorrect == 0:
-        print("""______
-                |      |
-                |       
-                |
-                |
-                |_________  """)
+        print(""" ______
+                 |      |
+                 |       
+                 |
+                 |
+                 |_________  """)
         
     elif incorrect == 1:
         print("""______
@@ -88,14 +88,13 @@ def scaffold (incorrect):
 ##### function to show the letters and spaces (the correct word, letters that have been guessed)
 def display(word,guessed):
     # variable for display word (starts as an empty word)
-    display_word = 
-    dashes = len(word)
+    display_word = ""
     #loop over the correct word (look at every letter)
     for let in word:
         # check if letter had been guessed
         if let in guessed:
             # then add the letter to display word
-            let
+            guessed += let
         # if they havent guessed letter
         else:
             #add underscore to display word
@@ -107,7 +106,7 @@ def display(word,guessed):
 #### Main game loop (while true) 
 while True:
     # call function to show hangman
-    scaffold
+    print(scaffold(incorrect))
     # print function (call) to show display word
     print(display(word,guessed))
     # creat variable (ask user to guess letter)
@@ -135,8 +134,7 @@ while True:
             incorrect = 0
             # (varable for guessed letters)
             guessed = []
-        else:
-            print
+
 
 
     #check if they lost (6 wrong guesses)
