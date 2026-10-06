@@ -24,8 +24,7 @@ incorrect = 0
 # varable for guessed letters
 guessed = []
 
-
-
+print(f"Wins: {win}, Losses : {loss}.")
 ##### function to show the letters and spaces (the correct word, letters that have been guessed)
 def display(word,guessed):
     # variable for display word (starts as an empty word)
