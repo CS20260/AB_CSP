@@ -9,7 +9,7 @@ import random
 with open("words.txt","r") as file:
     words= file.read().split(",")
 with open("win_loss.txt", "r")as file:
-    win_loss = file.read()
+    win_loss = file.read().split(",")
 #use split(",") on content of the words txt doc to create list of words
 
 # pull win and loose totals from other txt file and save them as 2 seperate variables
