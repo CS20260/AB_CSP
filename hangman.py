@@ -110,7 +110,7 @@ def scaffold (incorrect):
 
 
 
-#### Main game loop (while true) 
+#### main game loop (while true) 
 while True:
     # call function to show hangman
     scaffold(incorrect)

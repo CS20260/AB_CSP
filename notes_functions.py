@@ -47,8 +47,8 @@ print(f"Your rent is ${rent:.2f} that is {calc_percent(income, rent)}% of your s
 
 print(f"You have $ {income-rent-utilities-groceries-transportation-savings} left")
 
-
-
+####CALLS FUNCTION####
+calc_percent()
 
 
 
